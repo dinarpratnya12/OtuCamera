@@ -42,6 +42,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="50dp"
         android:text="Email"
+        android:textColor="@color/hitam"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/judul" />
 
@@ -52,7 +53,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginEnd="52dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Email"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -66,6 +67,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="10dp"
         android:text="Password"
+        android:textColor="@color/hitam"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailedt" />
 
@@ -101,6 +103,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="52dp"
         android:text="Log in"
+        android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/passedt"
         app:layout_constraintStart_toStartOf="@+id/passedt"
         app:layout_constraintTop_toBottomOf="@+id/forget" />
@@ -129,8 +132,9 @@
         android:id="@+id/regis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No account ? Create account "
         android:layout_marginTop="30dp"
+        android:text="No account ? Create account "
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fb" />
