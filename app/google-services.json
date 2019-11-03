@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "211489310525",
+    "firebase_url": "https://karya-seni-1793a.firebaseio.com",
+    "project_id": "karya-seni-1793a",
+    "storage_bucket": "karya-seni-1793a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211489310525:android:ef9f6900f5028414272754",
+        "android_client_info": {
+          "package_name": "dinar.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211489310525-21n1sp12tj05l5d3f1fqall7et753jt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTvVhXe3HZsgXEmgYHf0l6XT4VLFGOJOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211489310525-21n1sp12tj05l5d3f1fqall7et753jt6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
