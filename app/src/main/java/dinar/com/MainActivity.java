@@ -36,5 +36,6 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         Bitmap bitmap = (Bitmap)data.getExtras().get("data");
         imageView.setImageBitmap(bitmap);
+
     }
 }
