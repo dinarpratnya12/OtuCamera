@@ -3,6 +3,7 @@ package dinar.com;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -56,6 +57,8 @@ public class ForgotPassword extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE);
                             }
                         });
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
             }
         });
     }

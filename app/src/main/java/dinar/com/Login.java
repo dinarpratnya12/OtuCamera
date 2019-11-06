@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,7 +21,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
 
-    TextView google, fb, forget, register;
+    TextView forget, register;
+    ImageView google, fb;
     Button btnLogin;
     EditText edtEmail, edtPass;
     private FirebaseAuth mAuth;
@@ -33,10 +35,10 @@ public class Login extends AppCompatActivity {
 
         edtEmail = findViewById(R.id.emailedt);
         edtPass = findViewById(R.id.passedt);
-        btnLogin = findViewById(R.id.login);
+        btnLogin = findViewById(R.id.btnLogin);
         google = findViewById(R.id.google);
         fb = findViewById(R.id.fb);
-        register = findViewById(R.id.regis);
+        register = findViewById(R.id.register);
         forget = findViewById(R.id.forget);
 
         mAuth = FirebaseAuth.getInstance();
