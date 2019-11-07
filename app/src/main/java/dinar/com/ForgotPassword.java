@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class ForgotPassword extends AppCompatActivity {
 
     private EditText inputEmail;
-    private Button btnSend;
+    private Button btnSend, btnBack;
     private FirebaseAuth auth;
     private ProgressBar progressBar;
 
@@ -30,6 +30,7 @@ public class ForgotPassword extends AppCompatActivity {
 
         inputEmail = (EditText) findViewById(R.id.edtEmailForget);
         btnSend = (Button) findViewById(R.id.btnSend);
+        btnBack = (Button) findViewById(R.id.btnBack);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
         auth = FirebaseAuth.getInstance();
@@ -57,6 +58,13 @@ public class ForgotPassword extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE);
                             }
                         });
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+            }
+        });
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);
             }

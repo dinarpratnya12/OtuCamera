@@ -5,7 +5,9 @@
     <color name="colorAccent">#D81B60</color>
     <color name="krem">#ffbd88</color>
     <color name="oren">#ff7802</color>
-    <color name="hitam">#000</color>
+    <color name="hitam">#000000</color>
+    <color name="text">#1F1F1F</color>
     <color name="putih">#fff</color>
+    <color name="abu">#474747</color>
     <color name="abu1">#929292</color>
 </resources>

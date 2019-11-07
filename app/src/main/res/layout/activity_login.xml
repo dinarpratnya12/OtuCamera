@@ -18,10 +18,10 @@
             android:background="@drawable/orange_bg">
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="110dp"
-                android:layout_marginTop="80dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="50dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/logo2"/>
+                android:src="@drawable/logo3"/>
         </FrameLayout>
         <RelativeLayout
             android:layout_width="wrap_content"

@@ -10,23 +10,41 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imageView;
+
+    private static final int IMAGE_PICTURE = 1002;
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnCamera = (Button)findViewById(R.id.btnCamera);
-        imageView = (ImageView)findViewById(R.id.imageView);
+        mAuth = FirebaseAuth.getInstance();
+
+        Button btnCamera = (Button) findViewById(R.id.btnCamera);
 
         btnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent,0);
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivityForResult(intent, IMAGE_PICTURE);
+                }
+            }
+        });
+
+        Button btnLogout = (Button) findViewById(R.id.btnLogout);
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mAuth.signOut();
+                startActivity(new Intent(getApplicationContext(),Login.class));
+                finish();
             }
         });
     }
@@ -34,8 +52,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Bitmap bitmap = (Bitmap)data.getExtras().get("data");
-        imageView.setImageBitmap(bitmap);
 
+        if (requestCode == IMAGE_PICTURE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+
+
+            Intent intent = new Intent(getApplicationContext(), Result.class);
+            intent.putExtra(Result.EXTRA_RESULT, bitmap);
+            startActivity(intent);
+
+        }
     }
 }
