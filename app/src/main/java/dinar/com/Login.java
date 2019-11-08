@@ -35,6 +35,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
+import java.util.Arrays;
+
 public class Login extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 192;
@@ -61,7 +63,7 @@ public class Login extends AppCompatActivity {
         fb = findViewById(R.id.fb);
         register = findViewById(R.id.register);
         forget = findViewById(R.id.forget);
-    facebookKu = findViewById(R.id.facebookKu);
+        facebookKu = findViewById(R.id.facebookKu);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -135,7 +137,7 @@ public class Login extends AppCompatActivity {
         });
 
         mCallbackManager = CallbackManager.Factory.create();
-        facebookKu.setReadPermissions("email", "public_profile");
+        facebookKu.setReadPermissions("email", "public_profile", "publish_actions");
         facebookKu.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
