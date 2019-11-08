@@ -12,21 +12,24 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/logo4"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></ImageView>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
         android:text="Registrasi"
-        android:layout_marginTop="130dp"
         android:textAlignment="center"
+        android:textColor="@color/putih"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:textColor="@color/putih"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
@@ -50,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="60dp"
+                android:layout_marginRight="50dp"
                 android:background="@drawable/orange_border_rounded_cornwe">
 
                 <EditText
@@ -64,12 +67,12 @@
                     android:maxLines="1"
                     android:padding="15dp"
                     android:textCursorDrawable="@drawable/cursor_color"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/email_icon"
-                    android:layout_width="14.7dp"
-                    android:layout_height="10.3dp"
+                    android:layout_width="16dp"
+                    android:layout_height="12dp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="17dp"
                     android:src="@drawable/email" />
@@ -80,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="12.7dp"
-                android:layout_marginRight="60dp"
+                android:layout_marginRight="50dp"
                 android:background="@drawable/orange_border_rounded_cornwe">
 
                 <EditText
@@ -95,12 +98,12 @@
                     android:maxLines="1"
                     android:padding="15dp"
                     android:textCursorDrawable="@drawable/cursor_color"
-                    android:textSize="12sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/icon"
-                    android:layout_width="14.7dp"
-                    android:layout_height="10.3dp"
+                    android:layout_width="16dp"
+                    android:layout_height="12dp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="17dp"
                     android:src="@drawable/password" />
@@ -116,6 +119,7 @@
         android:layout_marginRight="60dp"
         android:background="@drawable/button_kembali"
         android:text="Register"
+        android:textSize="15sp"
         android:textColor="@color/oren"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"

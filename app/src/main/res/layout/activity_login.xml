@@ -50,8 +50,8 @@
             <ImageView
                 android:id="@+id/email_icon"
                 android:src="@drawable/email"
-                android:layout_width="14.7dp"
-                android:layout_height="10.3dp"
+                android:layout_width="16dp"
+                android:layout_height="12dp"
                 android:layout_marginLeft="17dp"
                 android:layout_centerVertical="true" />
 
@@ -84,8 +84,8 @@
 
             <ImageView
                 android:id="@+id/icon"
-                android:layout_width="14.7dp"
-                android:layout_height="10.3dp"
+                android:layout_width="16dp"
+                android:layout_height="12dp"
                 android:layout_marginLeft="17dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/password"/>
