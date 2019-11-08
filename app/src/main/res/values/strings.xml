@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">OTU Camera</string>
+    <string name="facebook_app_id">695037680901912</string>
+    <string name="fb_login_protocol_scheme">fb695037680901912</string>
 </resources>

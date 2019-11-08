@@ -10,8 +10,8 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:background="@drawable/logo3"
         android:layout_marginTop="90dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,25 +24,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_marginRight="60dp"
-        android:layout_marginLeft="60dp"
-        android:background="@drawable/orange_fill_rounded_color"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/button_main"
         android:text="Open Camera"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnLogout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="12dp"/>
 
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/orange_fill_rounded_color"
+        android:background="@drawable/button_main"
         android:text="Logout"
-        android:layout_marginRight="60dp"
-        android:layout_marginLeft="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

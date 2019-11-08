@@ -14,8 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    private static final int IMAGE_PICTURE = 1002;
+    private static final int IMAGE_PICTURE = 1;
 
     private FirebaseAuth mAuth;
 
